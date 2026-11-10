@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-book: 'Lora', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-serif-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-book-body, .font-book-lora {
+  font-family: 'Lora', Georgia, serif;
+}
+
+.font-book-literata {
+  font-family: 'Literata', Georgia, serif;
+}
+
+.font-book-merriweather {
+  font-family: 'Merriweather', Georgia, serif;
+}
+
+.font-book-garamond {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-book-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-book-mono {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Smooth snap scrolling for Tikbook vertical feed */
+.snap-y-mandatory {
+  scroll-snap-type: y mandatory;
+}
+
+.snap-start-card {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* Hide scrollbar for clean TikTok-style presentation */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Ambient subtle paper grain / textures */
+.paper-texture-sepia {
+  background-color: #f6eedb;
+  color: #2b241b;
+}
+
+.paper-texture-dark {
+  background-color: #161514;
+  color: #e5e0d8;
+}
+
+.paper-texture-alabaster {
+  background-color: #fbf9f5;
+  color: #1c1917;
+}
+
+.paper-texture-forest {
+  background-color: #131c17;
+  color: #d1ded6;
+}
+
+.paper-texture-midnight {
+  background-color: #0b0f19;
+  color: #e0e7ff;
+}

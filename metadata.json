@@ -1,0 +1,6 @@
+{
+  "name": "Tikbook",
+  "description": "Red social literaria estilo TikTok para descubrir, leer en modo e-book y publicar obras literarias, microrrelatos, poesía y novelas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
